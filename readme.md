@@ -16,6 +16,8 @@ Obs: The automation processes only 100 News, But this number can be changed in t
 - rpaframework
 - pandas  
 - requests
+- loguru
+- robocorp
 * Python 3.7 or latest
 
 

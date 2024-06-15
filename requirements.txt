@@ -1,3 +1,4 @@
 rpaframework
 pandas
 requests
+loguru

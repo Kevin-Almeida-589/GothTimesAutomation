@@ -5,7 +5,7 @@
 from pathlib import Path
 from robocorp.tasks import task
 import yaml
-from classes import GothAmistController
+from classes import GothAmistController,logger
 
 
 @task
@@ -23,7 +23,7 @@ def runner():
     run.result_amount()
 
     if int(run.results) == 0:
-        print("No results for the search phrase")
+        logger.info("No results for the search phrase")
 
     else:
         for index in range(1, run.data_amount + 1):
@@ -31,13 +31,14 @@ def runner():
             run.load_more(index)
             run.get_title(index)
             run.get_description(index)
-            run.get_picture(index)
+            run.get_picture(index*2)
             run.counting_phrases()
-            run.about_cash()
+            run.validate_news_context()
             run.download_image()
             run.append_data()
-
             if index == run.results:
                 break
 
         run.create_dataframe()
+    logger.info("Process Finished!!!")
+
