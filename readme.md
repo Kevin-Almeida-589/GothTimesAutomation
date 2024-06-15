@@ -6,7 +6,7 @@ The purpose of this automations is to get News informations, according to the us
 
 This automation, opens the Browser, search News according to the user input, get New's title, New's Descriptions and download the New's Image, then, extract all the info into a Excel file
 
-Obs: The automation processes only 100 News, But this number can be changed in the file "MAIN.PY"
+Obs: The automation processes only 100 News, But this number can be changed in the configFile "CONFIG.YAML"
 
 ## Getting Started
 
