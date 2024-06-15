@@ -41,5 +41,3 @@ def runner():
 
         run.create_dataframe()
     logger.info("Process Finished!!!")
-
-runner()
