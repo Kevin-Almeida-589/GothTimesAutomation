@@ -236,14 +236,4 @@ class Article:
         """
         Method to validate if description and title talks about cash
         """
-        self.cash = (
-            "True"
-            if [
-                pattern
-                for pattern in [r"\$", "dollar", "USD"]
-                if re.search(
-                    pattern, f"{self.title.lower()} {self.description.lower()}"
-                )
-            ]
-            else "False"
-        )
+        self.cash = "True" if re.search(r"\$|dollar|USD", f"{self.title.lower()} {self.description.lower()}") else "False"
