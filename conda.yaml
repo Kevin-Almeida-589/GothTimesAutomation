@@ -14,3 +14,4 @@ dependencies:
     - robocorp==1.2.4             # https://pypi.org/project/robocorp
     - robocorp-browser==2.2.1     # https://pypi.org/project/robocorp-browser
     - pandas
+    - loguru
