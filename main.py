@@ -34,7 +34,6 @@ def runner():
             run.get_picture(index*2)
             run.counting_phrases()
             run.validate_news_context()
-            input("e ai?")
             run.download_image()
             run.append_data()
             if index == run.results:
